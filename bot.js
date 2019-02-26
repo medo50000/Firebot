@@ -227,7 +227,7 @@ client.on('guildDelete', guild => {
   Server Kicked Man bot :cry:
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
-client.channels.get("521354318415134730").sendEmbed(embed)
+client.channels.get("550002003351175171").sendEmbed(embed)
 });
  
 
