@@ -210,7 +210,7 @@ client.on('guildCreate', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("RED")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=549952622539309078&permissions=8&scope=bot')
+     .setURL('https://discor')
   .setDescription(`**
   New Server Add Man Bot ✅
 اسم السيرفر: ${guild.name}
@@ -222,7 +222,7 @@ client.on('guildDelete', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("GOLD")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=517705146356989963&permissions=8&scope=bot')
+     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=549952622539309078&permissions=8&scope=bot')
   .setDescription(`**
   Server Kicked FireBot :cry:
 اسم السيرفر: ${guild.name}
