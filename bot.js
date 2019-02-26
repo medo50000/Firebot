@@ -215,7 +215,7 @@ client.on('guildCreate', guild => {
   New Server Add Man Bot ✅
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
-client.channels.get("509199796175765524").sendEmbed(embed)
+client.channels.get("550002003351175171").sendEmbed(embed)
 });
 
 client.on('guildDelete', guild => {
