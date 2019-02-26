@@ -210,9 +210,9 @@ client.on('guildCreate', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("RED")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=517705146356989963&permissions=8&scope=bot')
+     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=549952622539309078&permissions=8&scope=bot')
   .setDescription(`**
-  New Server Add FireBot ✅
+  New Server Add Man Bot ✅
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
 client.channels.get("509199796175765524").sendEmbed(embed)
@@ -227,7 +227,7 @@ client.on('guildDelete', guild => {
   Server Kicked FireBot :cry:
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
-client.channels.get("509199796175765524").sendEmbed(embed)
+client.channels.get("521354318415134730").sendEmbed(embed)
 });
  
 
@@ -235,8 +235,8 @@ client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('>bcall')){
- if (message.author.id !== '495680518365511721') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
- if(!message.author.id === '495680518365511721') return;
+ if (message.author.id !== '468479699543130132') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
+ if(!message.author.id === '468479699543130132') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -435,7 +435,7 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`✅ بدء تشغيل : **${song.title}**`);
 }
 const adminprefix = "-v";
-const devs = ['495680518365511721','495680518365511721'];
+const devs = ['468479699543130132','468479699543130132'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -803,7 +803,7 @@ client.on('message', message => {
             .addField('``My ID``' , `[ ${client.user.id} ]` , true)
 			      .addField('``My Prefix``' , `[ - ]` , true)
 			      .addField('``My Language``' , `[ Java Script ]` , true)
-			      .setFooter('By | iiFireGamer')
+			      .setFooter('By | Man OF DarK')
     })
 }
 });
