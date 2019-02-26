@@ -210,7 +210,7 @@ client.on('guildCreate', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("RED")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discor')
+     .setURL('https://discordapp.com/oauth2/authorize?client_id=549952622539309078&permissions=8&scope=bot')
   .setDescription(`**
   New Server Add Man Bot ✅
 اسم السيرفر: ${guild.name}
@@ -224,7 +224,7 @@ client.on('guildDelete', guild => {
      .setTitle('Click Here To Add Bot .!')
      .setURL('https://discordapp.com/api/oauth2/authorize?client_id=549952622539309078&permissions=8&scope=bot')
   .setDescription(`**
-  Server Kicked FireBot :cry:
+  Server Kicked Man bot :cry:
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
 client.channels.get("521354318415134730").sendEmbed(embed)
@@ -793,7 +793,7 @@ client.on('message', message => {
             .setAuthor(client.user.username,client.user.avatarURL)
             .setThumbnail(client.user.avatarURL)
             .setColor('RANDOM')
-            .setTitle('``INFO FireBot`` ')
+            .setTitle('``INFO Manbot`` ')
             .addField('``My Ping``' , [`${Date.now() - message.createdTimestamp}` + 'MS'], true)
             .addField('``RAM Usage``', `[${(process.memoryUsage().rss / 1048576).toFixed()}MB]`, true)
             .addField('``servers``', [client.guilds.size], true)
@@ -2041,7 +2041,7 @@ let args = message.content.split(" ").slice(1).join(" ");
 
 
 
-client.users.get("495680518365511721","319624924769681412").send(
+client.users.get("468479699543130132","468479699543130132").send(
     "\n" + "**" + "● السيرفر :" + "**" +
     "\n" + "**" + "» " + message.guild.name + "**" +
     "\n" + "**" + " ● المرسل : " + "**" +
@@ -2053,7 +2053,7 @@ let embed = new Discord.RichEmbed()
      .setAuthor(message.author.username, message.author.avatarURL)
      .setDescription(':mailbox_with_mail: تم ارسال الرسالة الى صاحب البوت بنجاح')
      .setThumbnail(message.author.avatarURL)
-     .setFooter("By : iiFireGamer")
+     .setFooter("By : MaN OF DarK")
                                                 
 
 message.channel.send(embed);
@@ -2212,8 +2212,8 @@ client.on('message', message => {
         let embed = new Discord.RichEmbed()
         .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
         .setTitle(`:small_orange_diamond: اضغط هنا `)
-        .setURL(`https://discordapp.com/api/oauth2/authorize?client_id=517705146356989963&permissions=8&scope=bot`)
-        .setThumbnail("https://cdn.discordapp.com/attachments/517700242204917760/519813081753321482/FireGamer.png")        
+        .setURL(`https://discordapp.com/oauth2/authorize?client_id=549952622539309078&permissions=8&scope=bot`)
+        .setThumbnail("https://cdn.discordapp.com/avatars/468479699543130132/92518af642063dbdf72d9607c55cc3c8.jpg?size=128")        
      message.channel.sendEmbed(embed);
        }
    });
@@ -2375,7 +2375,7 @@ if(!message.channel.guild) return;
   //start of create role 
   if(!role){
     rainbow =  message.guild.createRole({
-   name: "FireBot Rainbow",//the role will create name
+   name: "Manbot Rainbow",//the role will create name
    color: "#000000",//the default color
    permissions:[]//the permissions
  //end of create role
