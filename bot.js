@@ -434,7 +434,7 @@ function play(guild, song) {
 
 	serverQueue.textChannel.send(`✅ بدء تشغيل : **${song.title}**`);
 }
-const adminprefix = "-v";
+const adminprefix = "-";
 const devs = ['468479699543130132','468479699543130132'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
@@ -821,7 +821,7 @@ client.on("message", message => {
         }
     });
 client.on("guildMemberAdd", member => {
-let welcomer = member.guild.channels.find("name","welcome");
+let welcomer = member.guild.channels.find("name","『welcome』");
       if(!welcomer) return;
       if(welcomer) {
          moment.locale('ar-ly');
@@ -1639,7 +1639,7 @@ client.on('message', message => {
   let role = message.guild.member(message.author).roles.find('name', 'FireBot Say');
   if(!role){
     say =  message.guild.createRole({
-   name: "FireBot Say",//the role will create name
+   name: "ManBot Say",//the role will create name
    color: "#000000",//the default color
    permissions:[]//the permissions
  //end of create role
@@ -1942,7 +1942,7 @@ const cuttweet = [     'كت تويت ‏| تخيّل لو أنك سترسم ش�
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
    .setThumbnail(message.author.avatarURL) 
- .addField('FireBot' ,
+ .addField('ManBot' ,
   `${cuttweet[Math.floor(Math.random() * cuttweet.length)]}`)
   message.channel.sendEmbed(embed);
   console.log('[id] Send By: ' + message.author.username)
@@ -2191,7 +2191,7 @@ client.on('message', message => {
     .setColor("#707070")
     .addField(': دخولك لديسكورد قبل', `${moment(heg.createdTimestamp).format('YYYY/M/D HH:mm:ss')} **\n** \`${moment(heg.createdTimestamp).fromNow()}\`` ,true) 
     .addField(': انضمامك لسيرفر قبل', `${moment(h.joinedAt).format('YYYY/M/D HH:mm:ss')} \n \`${moment(h.joinedAt).fromNow()}\``, true)               
-    .setFooter(`FireBot`, 'https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif')                                 
+    .setFooter(`Man Bot`, 'https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif')                                 
     .setThumbnail(heg.avatarURL);
     message.channel.send(id)
 }       });
